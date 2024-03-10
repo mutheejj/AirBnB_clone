@@ -1,18 +1,10 @@
-.footer {
-	align-items: center;
-	background-color: white;
-	border-top: 1px solid #CCCCCC;
-	display: flex;
+footer {
+	background-color: #fff;
 	height: 60px;
-	justify-content: center;
-	width: 100%;
-}
-
-.footer-absolute {
-	bottom: 0;
-	position: absolute;
-}
-
-.footer-dynamic {
-	flex-shrink: 0;
+	border-top: 1px solid #CCCCCC;
+	position: fixed;
+	inset: 0px;
+	top: unset;
+	display: grid;
+	place-content: center;
 }
