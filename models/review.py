@@ -1,23 +1,24 @@
 #!/usr/bin/python3
-"""The `review` module.
+# -*- coding: utf-8 -*-
+"""Review Module
 
-It defines one class, `Review(),
-which sub-classes the `BaseModel()` class.`
+This Module inherits from BaseModel class.
+Review Module contains the attributes to be assigned
+to the reviews created by the users.
 """
+
 from models.base_model import BaseModel
 
 
 class Review(BaseModel):
-    """A review of a place/house.
-
-    It represents a review posted by the users
-    of the application about a place/house.
+    """Review Class
 
     Attributes:
-        text
-        user_id
-        place_id
+        place_id (str): The UUID of the Place the Review belongs to
+        user_id (str): The UUID of the User that made the review
+        text (str): The message the User wrote about the Place
+
     """
-    text = ""
-    user_id = ""
-    place_id = ""
+    place_id = ''
+    user_id = ''
+    text = ''

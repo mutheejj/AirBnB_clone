@@ -1,16 +1,20 @@
-*, *::after, *::before {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
+html, body {
+	height: 100%;
 }
 
 body {
+	display: flex;
+	flex-direction: column;
 	color: #484848;
+	font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
-.container {
-	max-width: 1000px;
+div.container {
+	flex: 1 0 auto;
 	margin: 30px auto;
+	max-width: 1000px;
+	width: 100%;
 }
